@@ -1,0 +1,8 @@
+{% block title %}And so another vacation begins.{% endblock %}
+{% block content %}
+  {% for event in vacay.events %}
+      {{ events.descriptoin|e }}. Cost ${{ event.cost|e }}. Joy ${{ event.joy|e }}
+  {% endfor %}
+{% endblock %}
+This changed your status by ${{ vacay.net|e }}.
+Ended up with a net of ${{ vacay.current|e }}.
